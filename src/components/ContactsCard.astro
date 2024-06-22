@@ -1,0 +1,36 @@
+---
+import Card from "./Card/index.astro";
+import { LINKS } from "../lib/constants";
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+  <div class="h-full">
+    <header class="flex items-center">
+      <h1 class="text-white text-xl font-bold">
+        Experience
+      </h1>
+    </header>
+    <div class="mt-2 space-y-4">
+      <div>
+        <h3 class="text-lg font-semibold">Senior Data Scientist</h3>
+        <a class="text-sm text-primary-500" href="https://www.cognizant.com/">Cognizant</a>
+        <p class="text-sm text-gray-600"> 2022 - Current </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">ML Engineer</h3>
+        <a class="text-sm text-primary-500" href="https://iasolver.es/"> Solver IA </a>
+        <p class="text-sm text-gray-600"> 2022 - 2023 </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">ML Researcher</h3>
+        <a class="text-sm text-primary-500" href="https://www.upv.es/"> UPV </a>
+        <p class="text-sm text-gray-600"> 2018 - 2022 </p>
+      </div>
+      <a href="/work">
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 pl-0">
+          View More
+        </button>
+      </a>
+    </div>
+  </div>
+</Card>
