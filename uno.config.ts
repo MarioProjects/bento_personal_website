@@ -23,14 +23,14 @@ export default defineConfig({
       gray: {
         50: "#FAFAFA",
         100: "#F5F5F5",
-        200: "#E5E5E5",
+        200: "#666666",
         300: "#D4D4D4",
         400: "#A3A3A3",
         500: "#737373",
         600: "#525252",
         700: "#404040",
         800: "#262626",
-        900: "#171717",
+        900: "#F5F5F5",
       },
       darkslate: {
         
@@ -39,7 +39,7 @@ export default defineConfig({
         200: "#c9c9c9",
         300: "#6b6b6b",
         400: "#383838",
-        500: "#171717" /* Exactly your example for the background */,
+        500: "#F5F5F5" /* Exactly your example for the background */,
         600: "#141414",
         700: "#111111",
         800: "#0e0e0e",
@@ -50,7 +50,7 @@ export default defineConfig({
         200: "#F3A3AA",
         300: "#EC7981",
         400: "#E64F59",
-        500: "#6699CC",
+        500: "#5173B5", /* Color accent */
         600: "#CF2F3D",
         700: "#B82534",
         800: "#A01B2B",
