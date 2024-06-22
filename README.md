@@ -68,6 +68,7 @@ or
 
 [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ladvace/astro-bento-portfolio)
 
-## Authors ❤️
+## Acknowledgements
 
 - Gianmarco - https://github.com/Ladvace
+- Dark Theme - https://www.tohuwabohu.io/2022/11/astrojs-theme-toggle/#
