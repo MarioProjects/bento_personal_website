@@ -1,4 +1,5 @@
 ---
+import ThemeSlider from "../components/ThemeSlider.astro";
 import BasicLayout from "./BasicLayout.astro";
 
 interface Props {
@@ -20,8 +21,7 @@ const { title, description, page, fullScreen } = Astro.props;
   <slot />
 </BasicLayout>
 
-<style>
-body {
-    background-color: #DBE0D9 !important;
-}
-</style>
+<ThemeSlider id="theme-toggle" />
+
+<!-- Theme Util -->
+<script src="/lib/theme-util.js" type="text/javascript" is:inline></script>

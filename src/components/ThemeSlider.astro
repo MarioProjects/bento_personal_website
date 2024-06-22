@@ -1,0 +1,72 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { id } = Astro.props;
+---
+
+<button
+  class="theme-toggle"
+  type="button"
+  title="Toggle theme"
+  aria-label="Toggle theme"
+  onclick="togglePreference()"
+  id={id}
+>
+  <Icon
+    size={36}
+    name="mdi:white-balance-sunny"
+    class="text-black"
+    id="light-on"
+  />
+  <Icon
+    size={36}
+    name="mdi:moon-and-stars"
+    class="text-white"
+    id="light-off"
+  />
+</button>
+
+<style>
+  button {
+    position: absolute;
+    top: 1.75em;
+    right: 2.25em;
+  }
+</style>
+
+<script>
+
+  // Add event listener to the button
+  const button = document.querySelector(".theme-toggle");
+  const lightOn = document.getElementById("light-on");
+  const lightOff = document.getElementById("light-off");
+
+
+  /* light vs dark */
+  const colorMode = getColorPreference();
+      // Update the button icon
+      /* If light then hide #light-off else hide #light-on */
+      if (colorMode === "light") {
+        lightOff!.style.display = "none";
+        lightOn!.style.display = "block";
+      } else {
+        lightOn!.style.display = "none";
+        lightOff!.style.display = "block";
+      }
+
+
+  if (button !== null && lightOn !== null && lightOff !== null) {
+    button.addEventListener("click", () => {
+      const colorMode = getColorPreference();
+      // Update the button icon
+      /* If light then hide #light-off else hide #light-on */
+      if (colorMode === "light") {
+        lightOff.style.display = "none";
+        lightOn.style.display = "block";
+      } else {
+        lightOn.style.display = "none";
+        lightOff.style.display = "block";
+      }
+    });
+  }
+</script>
