@@ -48,4 +48,4 @@ docker run -d -p 9001:8080 --name bento-personal-site bento-personal-site
 ## Acknowledgements
 
 - Gianmarco - https://github.com/Ladvace
-- Dark Theme - https://www.tohuwabohu.io/2022/11/astrojs-theme-toggle/#
+- Dark Theme - https://www.tohuwabohu.io/2022/11/astrojs-theme-toggle
