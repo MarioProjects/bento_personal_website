@@ -45,6 +45,10 @@ docker build -t bento-personal-site:latest .
 docker run -d -p 9001:8080 --name bento-personal-site bento-personal-site
 ```
 
+# Info
+
+To modify the **light/dark** theme, you need to go to the `src/styles/global.css` file and modify the `:root` properties.
+
 ## Acknowledgements
 
 - Gianmarco - https://github.com/Ladvace
