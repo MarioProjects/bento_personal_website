@@ -2,7 +2,7 @@
 # docker build -t bento-personal-site:latest .
 # docker run -d -p 9009:8080 --name bento-personal-site bento-personal-site
 # Use Node.js as the base image
-FROM node:20 as builder
+FROM node:20 AS builder
 
 # Set the working directory in the container
 WORKDIR /app
