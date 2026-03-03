@@ -3,6 +3,7 @@ export const LINKS = {
   linkedin: "https://www.linkedin.com/in/mario-parre%C3%B1o-lara-a33585125/",
   aidventure: "https://aidventure.es/",
   kaggle: "https://www.kaggle.com/maparla",
+  huggingface: "https://huggingface.co/marioparreno",
 };
 
 export const loaderAnimation = [
